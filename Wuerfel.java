@@ -13,6 +13,7 @@ public class Wuerfel
     /* Methoden */
     /** 
      * Diese Methode liefert den aktuellen Wert von aktWert
+     * @Authorv Nick 
      * @return liefert aktWert 
      */
     public int gibAktWert(){
@@ -21,6 +22,7 @@ public class Wuerfel
 
     /**  
      * Diese Methode wuerfelt eine neue Zahl zwischen 1 und 6 und weißt sie dem aktWert zu.
+     * @Author Pia
      */
     public void wuerfeln()
     {
@@ -38,6 +40,7 @@ public class Wuerfel
 
     /**
      * Diese Methode setzt den aktWert auf den Parameterwert aus wert
+     * @Author Michael
      */
     private void setzeAktWert(int  wert)
     {

@@ -19,7 +19,9 @@ public abstract class Person
     }
     /* Methoden */
     
-    
+    /**
+     * @Author Emma
+     */
     public void setzeAktErgebnis(int  pAktErgebnis){
         
     }
@@ -29,12 +31,16 @@ public abstract class Person
      */
     public abstract void spielen();
 
-    
+    /**
+     * @Author Alessio
+     */
     public int addiere(int  zahl1,int  zahl2){
         
     }
 
-    
+    /**
+     * @Author Henry
+     */
     public int gibAktErgebnis(){
         
     }
