@@ -16,8 +16,9 @@ public class Wuerfel
      * @Authorv Nick 
      * @return liefert aktWert 
      */
-    public int gibAktWert(){
-        
+    public int gibAktWert()
+    {
+        return(aktWert);
     }
 
     /**  
