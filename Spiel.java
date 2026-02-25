@@ -24,6 +24,7 @@ public class Spiel
     /** 
      * Diese Methode setzt den Attributwert von punkteCroupier 
      * auf den Wert aus pPunkteCroupier
+     * @Author Alessio
      * @param pPunkteCroupier
      */
     public void setzePunkteCroupier(int  pPunkteCroupier)
@@ -33,6 +34,7 @@ public class Spiel
 
     /**
      * Diese Methode liefert den aktuellen Spieler als Objekt 
+     * @Author Pia
      * @return liefert aktuellerSpieler 
      */
     public Person gibAktuellerSpieler()
@@ -43,6 +45,7 @@ public class Spiel
     /** 
      * Diese Methode setzt das Attribut aktuellerSpieler auf den 
      * übergebenen Wert aus pAktuellerSpieler
+     * @Author Henry
      * @param pAktuellerSpieler
      */
     public void setzeAktuellerSpieler(Person  pAktuellerSpieler)
@@ -52,6 +55,7 @@ public class Spiel
 
     /**
      * Diese Methode druckt den aktuellen Punktestand auf der Konsole
+     * @Author Michael
      */
     public void druckePunktestand()
     {
@@ -61,6 +65,7 @@ public class Spiel
     /**
      * Diese Methode wechselt den aktuellen Spieler auf der 
      * Grundlage der Belegung des Attributes aktuellerSpieler
+     * @Author Nick
      */
     public void spielerWechseln()
     {
@@ -70,6 +75,7 @@ public class Spiel
     /**
      * Diese Methode gibt den Gesamtsieger als Objekt zurück
      * @return Person die gewonnen hat
+     * @Author Alessio
      */
     public Person ermittleGesamtsieger()
     {
@@ -79,6 +85,7 @@ public class Spiel
     /**
      * Diese Methode gibt den Rundensieger als Objekt zurück
      * @return Person die die Runde gewonnen hat
+     * @Author Emma
      */
     public Person ermittleRundensieger()
     {
@@ -88,6 +95,7 @@ public class Spiel
     /**
      * Diese Methode startet ein neues Spiel. In dieser Methode ist die 
      * Spiellogik implementiert.
+     * @Author Henry
      */
 
     public void starteSpiel()
@@ -97,6 +105,7 @@ public class Spiel
 
     /**
      * Diese Methode startet eine Runde innerhalb eines Spiels
+     * @Author Michael
      */
     public void starteRunde()
     {
@@ -106,6 +115,7 @@ public class Spiel
     /**
      * Diese Methode beendet das Spiel und gibt auf der
      * Konsole ein Grußwort aus!
+     * @Author Pia
      */
 
     public void spielBeenden()
@@ -116,6 +126,7 @@ public class Spiel
     /** 
      * Diese Methode liefert die Punkte des Spielers
      *@return liefert punkteSpieler 
+     *@Author Henry
      */
     public int gibPunkteSpieler()
     {
@@ -126,6 +137,7 @@ public class Spiel
      * Diese Methode setzt den Wert von punkteSpieler auf den
      * übergebenen Wert von pPunkteSpieler
      * @param pPunkteSpieler
+     * @Author Nick
      */
     public void setzePunkteSpieler(int  pPunkteSpieler)
     {
@@ -135,6 +147,7 @@ public class Spiel
     /**
      * Diese Methode gibt den Wert aus punkteCroupier aus 
      * @return liefert punkteCroupier 
+     * @Author Emma
      */
     public int gibPunkteCroupier()
     {

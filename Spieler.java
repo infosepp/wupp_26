@@ -12,6 +12,7 @@ public class Spieler extends Person
     /**
      * Diese Methode gibt zunächst eine entscheidungsfrage auf der 
      * Konsole aus und gibt anschließend die Benutzereingabe zurück
+     * @Author Nick
      * @return entscheidung
      */
     public boolean entscheide(){
@@ -21,6 +22,7 @@ public class Spieler extends Person
     /**
      * Diese Methode überschreibt die abstrakte Methode spielen() in dern Klasse Person. Sie
      * legt fest, wie der Spieler bei seinem Zug spielt.
+     * @Author Emma
      */
     public void spielen()
     {

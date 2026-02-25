@@ -10,7 +10,7 @@ public class Croupier extends Person
 
     /*Methoden*/
     /**
-     * 
+     * @Author Michael
      */
     public void spielen()
     {
