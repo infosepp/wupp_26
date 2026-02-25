@@ -42,7 +42,7 @@ public abstract class Person
      * @Author Henry
      */
     public int gibAktErgebnis(){
-        
+         return aktErgebnis;
     }
 
     /**
