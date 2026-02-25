@@ -23,6 +23,7 @@ public abstract class Person
      * @Author Emma
      */
     public void setzeAktErgebnis(int  pAktErgebnis){
+        aktErgebnis = pAktErgebnis;
         
     }
 
@@ -35,6 +36,8 @@ public abstract class Person
      * @Author Alessio
      */
     public int addiere(int  zahl1,int  zahl2){
+        return zahl1 + zahl2;
+        
         
     }
 
