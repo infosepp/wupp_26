@@ -157,7 +157,7 @@ public class Spiel
      * @Author Emma
      */
     public int gibPunkteCroupier()
-    {
+    {  return punkteCroupier;
         
     }
 
