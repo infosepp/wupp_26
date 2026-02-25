@@ -69,7 +69,14 @@ public class Spiel
      */
     public void spielerWechseln()
     {
- 
+        if(aktuellerSpieler==spieler)
+        {
+            aktuellerSpieler=croupier;
+        }
+        else if(aktuellerSpieler==croupier)
+        {
+            aktuellerSpieler=spieler;
+        }
     }
 
     /**
@@ -141,7 +148,7 @@ public class Spiel
      */
     public void setzePunkteSpieler(int  pPunkteSpieler)
     {
-        
+        punkteSpieler=pPunkteSpieler;
     }
 
     /**

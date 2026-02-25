@@ -4,9 +4,11 @@ import java.util.Scanner;
  */
 public class Spieler extends Person 
 {
+    Scanner sc;
     /*Konstruktor*/
     public Spieler()
     {
+        sc = new Scanner(System.in);
     }
     /* Methoden */
     /**
@@ -15,8 +17,15 @@ public class Spieler extends Person
      * @Author Nick
      * @return entscheidung
      */
-    public boolean entscheide(){
-        
+    public boolean entscheide()
+    {
+        System.out.println("Weiter? (Y/N)");
+        String response = sc.nextLine();
+        if(response.equalsIgnoreCase("Y"))
+        {
+            return(true);
+        }
+        return(false);
     }
 
     /**
