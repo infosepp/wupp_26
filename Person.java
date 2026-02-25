@@ -23,6 +23,7 @@ public abstract class Person
      * @Author Emma
      */
     public void setzeAktErgebnis(int  pAktErgebnis){
+        aktErgebnis = pAktErgebnis;
         
     }
 
