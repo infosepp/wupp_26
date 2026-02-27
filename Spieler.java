@@ -4,7 +4,7 @@ import java.util.Scanner;
  */
 public class Spieler extends Person 
 {
-    Scanner sc;
+    private Scanner sc;
     /*Konstruktor*/
     public Spieler()
     {
