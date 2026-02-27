@@ -14,7 +14,11 @@ public class Croupier extends Person
      */
     public void spielen()
     {
-        
+        while(gibAktErgebnis() < 16) {
+           wuerfel.wuerfeln(); 
+        }
     }
+    
+    
 }//Ende Klasse: Croupier
 
