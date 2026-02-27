@@ -147,7 +147,7 @@ public class Spiel
 
     public void spielBeenden()
     {
-        
+        System.out.println("Game over"); 
     }
 
     /** 
