@@ -96,6 +96,15 @@ public class Spiel
      */
     public Person ermittleRundensieger()
     {
+       int pkt1 = spieler.gibAktErgebnis();
+       int pkt2 = croupier.gibAktErgebnis();
+       
+       if( pkt1 < 21 && (pkt1 > pkt2 || pkt2 > 21))
+       {
+           return spieler;
+       }
+       return croupier;
+       
        
     }
 
