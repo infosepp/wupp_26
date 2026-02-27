@@ -48,7 +48,7 @@ public class Spiel
      */
     public Person gibAktuellerSpieler()
     {
-        
+        return aktuellerSpieler;
     }
 
     /** 
@@ -147,7 +147,7 @@ public class Spiel
 
     public void spielBeenden()
     {
-        
+        System.out.println("Game over"); 
     }
 
     /** 
