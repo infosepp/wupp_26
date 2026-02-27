@@ -1,3 +1,4 @@
+import java.util.*;
 /**
  * Die Klasse Spiel beschreibt die übergeordnete Logik des Wupp-Spiels.
  */
@@ -9,6 +10,8 @@ public class Spiel
     private int punkteSpieler;
     private Spieler spieler;
     private int punkteCroupier;
+    private Scanner answer;
+    
 
     /*Konstruktor*/
     public Spiel()
@@ -18,6 +21,7 @@ public class Spiel
         punkteCroupier = 0;
         punkteSpieler = 0;
         aktuellerSpieler = spieler;
+        answer = new Scanner(System.in);
     }
 
     /* Methoden */
@@ -29,17 +33,17 @@ public class Spiel
      */
     public void setzePunkteCroupier(int  pPunkteCroupier)
     {
-        
+        punkteCroupier = pPunkteCroupier;
     }
 
     /**
      * Diese Methode liefert den aktuellen Spieler als Objekt 
-     * @Author Pia
+     * @Author Maryna
      * @return liefert aktuellerSpieler 
      */
     public Person gibAktuellerSpieler()
     {
-        
+        return aktuellerSpieler;
     }
 
     /** 
@@ -59,7 +63,8 @@ public class Spiel
      */
     public void druckePunktestand()
     {
-        
+        System.out.println("Spieler Punkte " + punkteSpieler 
+        + " | Croupier Punkte " + punkteCroupier);
     }
 
     /**
@@ -85,10 +90,14 @@ public class Spiel
      * @Author Alessio
      */
     public Person ermittleGesamtsieger()
-    {
-        
+     {if (punkteSpieler>punkteCroupier && punkteSpieler<21){
+        System.out.println("you win");
+        return spieler;
+      }else {
+       System.out.println("you loose"); 
+       return croupier;
+      }
     }
-
     /**
      * Diese Methode gibt den Rundensieger als Objekt zurück
      * @return Person die die Runde gewonnen hat
@@ -116,7 +125,11 @@ public class Spiel
 
     public void starteSpiel()
     {
-        
+        punkteCroupier = 0;        
+        punkteSpieler = 0;
+        aktuellerSpieler=spieler;
+        System.out.println("Neues spiel gestartet"); 
+        starteRunde() ;
     }
 
     /**
@@ -126,6 +139,12 @@ public class Spiel
     public void starteRunde()
     {
         
+        System.out.println("Möchtest du eine Runde Starten 1 - ja,  2 - nein");
+        if (answer.nextInt() == 1){
+            while(spieler.entscheide()) {
+                spieler.spielen();
+            }
+        }
     }
 
     /**
@@ -136,7 +155,7 @@ public class Spiel
 
     public void spielBeenden()
     {
-        
+        System.out.println("Game over"); 
     }
 
     /** 
@@ -146,7 +165,7 @@ public class Spiel
      */
     public int gibPunkteSpieler()
     {
-        
+        return punkteSpieler;
     }
 
     /** 
