@@ -1,3 +1,10 @@
+import java.util.*;
+
+
+
+
+
+
 /**
  * Die Klasse Spiel beschreibt die übergeordnete Logik des Wupp-Spiels.
  */
@@ -9,6 +16,7 @@ public class Spiel
     private int punkteSpieler;
     private Spieler spieler;
     private int punkteCroupier;
+    private Scanner answer;
 
     /*Konstruktor*/
     public Spiel()
@@ -18,6 +26,7 @@ public class Spiel
         punkteCroupier = 0;
         punkteSpieler = 0;
         aktuellerSpieler = spieler;
+        answer = new Scanner(System.in);
     }
 
     /* Methoden */
@@ -45,12 +54,12 @@ public class Spiel
     /** 
      * Diese Methode setzt das Attribut aktuellerSpieler auf den 
      * übergebenen Wert aus pAktuellerSpieler
-     * @Author Henry
+     * @Author Nick
      * @param pAktuellerSpieler
      */
     public void setzeAktuellerSpieler(Person  pAktuellerSpieler)
     {
-        
+        aktuellerSpieler=pAktuellerSpieler;
     }
 
     /**
@@ -59,7 +68,8 @@ public class Spiel
      */
     public void druckePunktestand()
     {
-        
+        System.out.println("Spieler Punkte " + punkteSpieler 
+        + " | Croupier Punkte " + punkteCroupier);
     }
 
     /**
@@ -121,6 +131,12 @@ public class Spiel
     public void starteRunde()
     {
         
+        System.out.println("Möchtest du eine Runde Starten 1 - ja,  2 - nein");
+        if (answer.nextInt() == 1){
+            while(spieler.entscheide()) {
+                spieler.spielen();
+            }
+        }
     }
 
     /**

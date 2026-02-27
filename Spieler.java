@@ -4,7 +4,7 @@ import java.util.Scanner;
  */
 public class Spieler extends Person 
 {
-    Scanner sc;
+    private Scanner sc;
     /*Konstruktor*/
     public Spieler()
     {
@@ -35,7 +35,18 @@ public class Spieler extends Person
      */
     public void spielen()
     {
-        
+        for(int i = 0; i < 3; i = i + 1)
+        {
+            wuerfel.wuerfeln();
+            setzeAktErgebnis(gibAktErgebnis()+wuerfel.gibAktWert());
+        }
+        System.out.println ("Aktuelles Ergebniss " + gibAktErgebnis());
+        while(entscheide() && gibAktErgebnis() < 21)
+        {
+            wuerfel.wuerfeln();
+            setzeAktErgebnis(gibAktErgebnis()+wuerfel.gibAktWert());
+            System.out.println ("Aktuelles Ergebniss " + gibAktErgebnis());
+        }
     }
 
 }//Ende Klasse: Spieler
