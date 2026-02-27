@@ -54,12 +54,12 @@ public class Spiel
     /** 
      * Diese Methode setzt das Attribut aktuellerSpieler auf den 
      * übergebenen Wert aus pAktuellerSpieler
-     * @Author Henry
+     * @Author Nick
      * @param pAktuellerSpieler
      */
     public void setzeAktuellerSpieler(Person  pAktuellerSpieler)
     {
-        
+        aktuellerSpieler=pAktuellerSpieler;
     }
 
     /**
