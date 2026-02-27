@@ -49,7 +49,7 @@ public class Spiel
      */
     public Person gibAktuellerSpieler()
     {
-        
+        return aktuellerSpieler;
     }
 
     /** 
@@ -96,10 +96,14 @@ public class Spiel
      * @Author Alessio
      */
     public Person ermittleGesamtsieger()
-    {
-        
+     {if (punkteSpieler>punkteCroupier && punkteSpieler<21){
+        System.out.println("you win");
+        return spieler;
+      }else {
+       System.out.println("you loose"); 
+       return croupier;
+      }
     }
-
     /**
      * Diese Methode gibt den Rundensieger als Objekt zurück
      * @return Person die die Runde gewonnen hat
@@ -144,7 +148,7 @@ public class Spiel
 
     public void spielBeenden()
     {
-        
+        System.out.println("Game over"); 
     }
 
     /** 
