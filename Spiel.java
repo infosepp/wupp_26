@@ -33,7 +33,7 @@ public class Spiel
      */
     public void setzePunkteCroupier(int  pPunkteCroupier)
     {
-        
+        punkteCroupier = pPunkteCroupier;
     }
 
     /**
