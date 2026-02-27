@@ -116,7 +116,11 @@ public class Spiel
 
     public void starteSpiel()
     {
-        
+        punkteCroupier = 0;        
+        punkteSpieler = 0;
+        aktuellerSpieler=spieler;
+        System.out.println("Neues spiel gestartet"); 
+        starteRunde() ;
     }
 
     /**
@@ -152,7 +156,7 @@ public class Spiel
      */
     public int gibPunkteSpieler()
     {
-        
+        return punkteSpieler;
     }
 
     /** 
