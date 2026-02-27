@@ -27,7 +27,7 @@ public class Wuerfel
      */
     public void wuerfeln()
     {
-        
+        setzeAktWert(erzeugeZufallszahl());
     }
 
     /**
