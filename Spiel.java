@@ -44,7 +44,7 @@ public class Spiel
 
     /**
      * Diese Methode liefert den aktuellen Spieler als Objekt 
-     * @Author Pia
+     * @Author Maryna
      * @return liefert aktuellerSpieler 
      */
     public Person gibAktuellerSpieler()
