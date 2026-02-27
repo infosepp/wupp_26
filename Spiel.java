@@ -17,6 +17,7 @@ public class Spiel
     private Spieler spieler;
     private int punkteCroupier;
     private Scanner answer;
+    
 
     /*Konstruktor*/
     public Spiel()
@@ -38,7 +39,7 @@ public class Spiel
      */
     public void setzePunkteCroupier(int  pPunkteCroupier)
     {
-        
+        punkteCroupier = pPunkteCroupier;
     }
 
     /**
