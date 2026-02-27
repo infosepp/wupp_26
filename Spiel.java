@@ -1,10 +1,4 @@
 import java.util.*;
-
-
-
-
-
-
 /**
  * Die Klasse Spiel beschreibt die übergeordnete Logik des Wupp-Spiels.
  */
